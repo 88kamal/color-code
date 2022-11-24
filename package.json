@@ -2,19 +2,25 @@
   "name": "colorcode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/88kamal/color-code.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kamal Nayan Upadhyay",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/88kamal/color-code/issues"
   },
-  "homepage": "https://github.com/88kamal/color-code#readme"
+  "homepage": "https://github.com/88kamal/color-code#readme",
+  "dependencies": {
+    "typescript": "^4.9.3"
+  },
+  "files": ["lib/**/*"]
 }
